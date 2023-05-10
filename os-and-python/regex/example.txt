@@ -1,0 +1,2 @@
+This is an example to use grep, I like fruit
+If I only had a big amount of stamina I will do everything for you

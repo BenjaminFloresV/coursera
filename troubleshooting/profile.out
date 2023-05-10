@@ -1,0 +1,69 @@
+# callgrind format
+version: 1
+creator: pprofile
+event: usphit :microseconds/hit
+events: hits microseconds usphit
+cmd: ./test.py
+fl=/usr/lib/python3.10/random.py
+fn=randint:366
+366 1 4 4
+370 1 14 14
+cfl=/usr/lib/python3.10/random.py
+cfn=randrange:292
+calls=1 292
+370 1 60 60
+fn=randrange:292
+292 1 4 4
+302 1 3 3
+303 1 3 3
+314 1 2 2
+324 1 2 2
+325 1 3 3
+336 1 2 2
+337 1 1 1
+338 1 2 2
+350 1 3 3
+351 1 2 2
+352 1 9 9
+cfl=/usr/lib/python3.10/random.py
+cfn=_randbelow_with_getrandbits:239
+calls=1 239
+352 1 19 19
+fn=_randbelow_with_getrandbits:239
+239 1 2 2
+242 1 2 2
+244 1 2 2
+245 1 3 3
+246 1 3 3
+247 1 1 1
+249 1 2 2
+fl=./test.py
+fn=<module>:1
+1 1 24 24
+2 1 13 13
+5 1 3 3
+9 1 4 4
+19 1 2 2
+20 1 8 8
+cfl=./test.py
+cfn=set_message:9
+calls=1 9
+20 1 112 112
+21 1 11 11
+cfl=./test.py
+cfn=show_message:5
+calls=1 5
+21 1 38 38
+fn=show_message:5
+5 1 1 1
+6 1 36 36
+fn=set_message:9
+9 1 2 2
+10 1 24 24
+cfl=/usr/lib/python3.10/random.py
+cfn=randint:366
+calls=1 366
+10 1 79 79
+12 1 2 2
+13 1 2 2
+16 1 1 1
